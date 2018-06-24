@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
+import { AdBanner } from 'src/app/dinamic-components/AdBanner';
+import { AdService } from './dinamic-components/ad.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  
+  ads: AdBanner[];
+
+  constructor(private adService: AdService) {}
+
+  ngOnInit() {
+    this.ads = this.adService.getAds();
+  }
 }

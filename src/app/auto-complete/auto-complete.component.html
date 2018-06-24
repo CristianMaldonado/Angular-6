@@ -1,0 +1,23 @@
+<div style="padding-top: 30px">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+
+      <p-autoComplete 
+        [(ngModel)]="country"
+        
+        [suggestions]="filteredCountries" 
+        (completeMethod)="filterCountrySingle($event)"
+        [autoHighlight]="true"
+        [dropdown]="true"        
+        [field]="fieldToView" 
+        [size]="30"
+        placeholder="Countries" 
+        [minLength]="1"
+      ></p-autoComplete>
+    
+    <span style="margin-left:10px">Country: {{country ? country.name||country : 'none'}}</span>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
