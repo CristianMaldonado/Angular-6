@@ -1,0 +1,59 @@
+<form [formGroup]="formPadre">
+  <div class="row">
+    <div class="col-md-4">
+      <input type="text" formControlName="propiedad">
+    </div>
+    <div class="col-md-4">
+        <app-buttons
+          name="agregarArray"
+          (click)="agregarArray()"
+        ></app-buttons>
+    </div>
+  </div>
+  
+  <ul formArrayName="array">
+    <li *ngFor="let e of array.controls; let indice=index" [formGroupName]="indice">
+            <!--  <div class="row">
+
+        <div class="col-md-4">
+          <input type="text" formControlName="propiedad2">
+        </div>
+        <div class="col-md-6">
+          <ul formArrayName="nuevoArray">
+            <li *ngFor="let o of getNuevoArray(indice).controls; let indice2=index" [formGroupName]="indice2">
+              <div class="row">
+                  <div class="col-md-3">
+                    <input type="text" formControlName="numero">
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" formControlName="fuente">
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" formControlName="valor2">
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </div> -->
+        <app-form-array-hijo
+          [formElement]="e"
+          (data)="enviar($event)"
+        ></app-form-array-hijo>
+        <!-- <div class="col-md-2">
+            <app-buttons
+              name="agregarElemento"
+              (click)="agregarElemento(indice)"
+            ></app-buttons>
+        </div>
+      </div> -->
+
+      
+    </li>
+  </ul>
+  <!-- <div class="row">
+    <div class="col-md-4">
+      <app-buttons name="enviar" (click)="enviar()"></app-buttons>
+    </div>
+  </div> -->
+
+</form>

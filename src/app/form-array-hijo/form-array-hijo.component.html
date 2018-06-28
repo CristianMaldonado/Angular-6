@@ -1,0 +1,42 @@
+<form [formGroup]="formElement">
+  <div class="row">
+    <div class="col-md-4">
+      <input type="text" formControlName="propiedad2">
+    </div>
+    <div class="col-md-6">
+      <ul formArrayName="nuevoArray">
+        <li *ngFor="let o of nuevoArray.controls; let indice2=index" [formGroupName]="indice2">
+          <div class="row">
+              <div class="col-md-3">
+                <input type="text" formControlName="numero">
+              </div>
+              <div class="col-md-3">
+                <input type="text" formControlName="fuente">
+              </div>
+              <div class="col-md-3">
+                <input type="text" formControlName="valor2">
+              </div>
+            </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="row">
+        <div class="col-md-6">
+            <app-buttons
+            name="agregarElemento"
+            (click)="agregarElemento()"
+          ></app-buttons>
+        </div>
+        <div class="col-md-6">
+            <app-buttons
+            name="enviarData"
+            (click)="enviarData()"
+          ></app-buttons>
+        </div>
+      </div>
+        
+    </div>
+      
+  </div>
+</form>

@@ -11,9 +11,11 @@ import { AutoCompleteModule } from "primeng/autocomplete";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DinamicComponentsModule } from './dinamic-components/dinamic-components.module';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from "@angular/http";
 import { CountryService } from './auto-complete/country.service';
+import { FormArrayPadreComponent } from './form-array-padre/form-array-padre.component';
+import { FormArrayHijoComponent } from './form-array-hijo/form-array-hijo.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CountryService } from './auto-complete/country.service';
     BasicTableComponent,
     ElementContainerComponent,
     ButtonsComponent,
-    AutoCompleteComponent
+    AutoCompleteComponent,
+    FormArrayPadreComponent,
+    FormArrayHijoComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +34,7 @@ import { CountryService } from './auto-complete/country.service';
     DinamicComponentsModule,
     AutoCompleteModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule    
   ],
   providers: [CountryService],
