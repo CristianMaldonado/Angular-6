@@ -16,6 +16,11 @@ import { HttpModule } from "@angular/http";
 import { CountryService } from './auto-complete/country.service';
 import { FormArrayPadreComponent } from './form-array-padre/form-array-padre.component';
 import { FormArrayHijoComponent } from './form-array-hijo/form-array-hijo.component';
+import { CorteDeControlComponent } from './corte-de-control/corte-de-control.component';
+import { EmulacionService } from './corte-de-control/emulacion.service';
+import { DropFileUploadComponent } from './drop-file-upload/drop-file-upload.component';
+
+import { FileUploadModule } from 'primeng/fileupload';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,9 @@ import { FormArrayHijoComponent } from './form-array-hijo/form-array-hijo.compon
     ButtonsComponent,
     AutoCompleteComponent,
     FormArrayPadreComponent,
-    FormArrayHijoComponent
+    FormArrayHijoComponent,
+    CorteDeControlComponent,
+    DropFileUploadComponent
   ],
   imports: [
     BrowserModule,
@@ -35,9 +42,10 @@ import { FormArrayHijoComponent } from './form-array-hijo/form-array-hijo.compon
     AutoCompleteModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule    
+    HttpModule,
+    FileUploadModule
   ],
-  providers: [CountryService],
+  providers: [CountryService, EmulacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,100 @@
+{
+    "header": {
+        "result": ""
+    },
+    "data": {
+        "rowset": [
+            {
+                "codcan": "ACCESS",
+                "moneda": "ARS",
+                "opera": "C",
+                "precio": "555",
+                "plazo": "000"
+            },
+            {
+                "codcan": "ACCESS",
+                "moneda": "ARS",
+                "opera": "C",
+                "precio": "545",
+                "plazo": "024"
+            },
+            {
+                "codcan": "ACCESS",
+                "moneda": "ARS",
+                "opera": "C",
+                "precio": "879",
+                "plazo": "048"
+            },
+            {
+                "codcan": "ACCESS",
+                "moneda": "USD",
+                "opera": "C",
+                "precio": "444",
+                "plazo": "000"
+            },
+            {
+                "codcan": "ACCESS",
+                "moneda": "USD",
+                "opera": "C",
+                "precio": "575",
+                "plazo": "024"
+            },
+            {
+                "codcan": "ACCESS",
+                "moneda": "ARS",
+                "opera": "V",
+                "precio": "654",
+                "plazo": "000"
+            },
+            {
+                "codcan": "ACCESS",
+                "moneda": "ARS",
+                "opera": "V",
+                "precio": "98",
+                "plazo": "024"
+            },
+            {
+                "codcan": "ACCESS",
+                "moneda": "ARS",
+                "opera": "V",
+                "precio": "88",
+                "plazo": "048"
+            },
+            {
+                "codcan": "ACCESS",
+                "moneda": "USD",
+                "opera": "V",
+                "precio": "45",
+                "plazo": "000"
+            },
+            {
+                "codcan": "ACCESS",
+                "moneda": "USD",
+                "opera": "V",
+                "precio": "321",
+                "plazo": "024"
+            },
+            {
+                "codcan": "ACCESS",
+                "moneda": "USD",
+                "opera": "V",
+                "precio": "123",
+                "plazo": "048"
+            },
+            {
+                "codcan": "BE",
+                "moneda": "ARS",
+                "opera": "T",
+                "precio": "200",
+                "plazo": ""
+            },
+            {
+                "codcan": "BE",
+                "moneda": "USD",
+                "opera": "T",
+                "precio": "200",
+                "plazo": ""
+            }
+        ]
+    }
+}
